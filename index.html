@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>网球知识博客</title>
+    <style>
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 50px; /* 调整大小 */
+            height: auto;
+            pointer-events: none; /* 禁止点击 */
+        }
+        .slider {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+        .slides {
+            display: flex;
+            animation: slide 10s infinite; /* 调整动画时间 */
+        }
+        .slide {
+            min-width: 50%; /* 调整为50%以缩小图片 */
+            transition: 1.2s;
+            margin: 0 auto; /* 居中图片 */
+        }
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            20% { transform: translateX(0); }
+            25% { transform: translateX(-100%); }
+            45% { transform: translateX(-100%); }
+            50% { transform: translateX(-200%); }
+            70% { transform: translateX(-200%); }
+            75% { transform: translateX(-300%); }
+            95% { transform: translateX(-300%); }
+            100% { transform: translateX(0); } /* 回到第一张 */
+        }
+        h2 {
+            text-align: center; /* 居中标题 */
+            font-size: 2em; /* 放大标题 */
+            margin-top: 20px; /* 顶部间距 */
+        }
+        ul {
+            list-style-type: none; /* 去掉默认的列表样式 */
+            padding: 0; /* 去掉内边距 */
+            text-align: center; /* 居中列表 */
+        }
+        li {
+            font-size: 1.2em; /* 缩小链接字体 */
+            margin: 10px 0; /* 每个链接的上下间距 */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img/01.jpg" alt="Tennis Logo" class="logo">
+        <h1>网球知识博客</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="category.html">个人运动记录</a></li>
+                <li><a href="search.html">搜索</a></li>
+                <li><a href="article1.html">网球基础知识</a></li>
+                <li><a href="article2.html">网球比赛规则</a></li>
+                <li><a href="article3.html">网球技巧分享</a></li>
+                <li><a href="article4.html">网球历史与发展</a></li>
+                <li><a href="article5.html">著名网球运动员介绍</a></li>
+                <li><a href="article6.html">网球场地分类</a></li>
+                <li><a href="article7.html">网球器械推荐</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 滚动图片区域 -->
+    <div class="slider">
+        <div class="slides">
+            <img src="img/20.jpg" alt="Tennis Image 1" class="slide">
+            <img src="img/21.jpg" alt="Tennis Image 2" class="slide">
+            <img src="img/22.jpg" alt="Tennis Image 3" class="slide">
+            <img src="img/23.jpg" alt="Tennis Image 4" class="slide">
+            <img src="img/25.jpg" alt="Tennis Image 5" class="slide">
+            <img src="img/26.jpg" alt="Tennis Image 6" class="slide">
+        </div>
+    </div>
+
+    <main>
+        <h2>我的知识</h2>
+        <ul>
+            <li><a href="article1.html">网球基础知识</a></li>
+            <li><a href="article2.html">网球比赛规则</a></li>
+            <li><a href="article3.html">网球技巧分享</a></li>
+            <li><a href="article4.html">网球历史与发展</a></li>
+            <li><a href="article5.html">著名网球运动员介绍</a></li>
+            <li><a href="article6.html">网球场地分类</a></li>
+            <li><a href="article7.html">网球器械推荐</a></li>
+        </ul>
+    </main>
+    <footer>
+        <p>©个人网球知识博客</p>
+    </footer>
+</body>
+</html> 
